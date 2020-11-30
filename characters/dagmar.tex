@@ -15,12 +15,12 @@
 % Headline
 \CharacterName{Unnamed Silver Orb}
 
-\Class{Sorcerer 13}
+\Class{Sorcerer 14}
 \Background{Noble}
 \PlayerName{Mathew}
 \Race{Human}
 \Alignment{Neutral Good}
-\XP{139027}
+\XP{163851}
 
 
 % Ability scores
@@ -99,11 +99,11 @@
 \ArmorClass{13}
 \Initiative{0}
 \Speed{30ft}
-\MaxHitPoints{85}
+\MaxHitPoints{92}
 \CurrentHitPoints{85}
 \TemporaryHitPoints{}
-\MaxHitDice{12d6}
-\CurrentHitDice{12d6}
+\MaxHitDice{14d6}
+\CurrentHitDice{14d6}
 
 \CP{}
 \SP{}
@@ -162,7 +162,7 @@ My noble upbringing and demeanour makes it hard for me to connect with people, a
 \FeaturesTraits{
 \textbf{Font of Magic}
 \begin{itemize}
-  \item Sorcery Points (13)
+  \item Sorcery Points (14)
   \item Flexible Casting
 \end{itemize}
 \textbf{Metamagic}
@@ -176,6 +176,7 @@ My noble upbringing and demeanour makes it hard for me to connect with people, a
   \item Dragon Ancestor
   \item Draconic Resilience
   \item Elemental Affinity
+  \item Dragon Wings
 \end{itemize}
 \textbf{Noble}
 \begin{itemize}
@@ -192,6 +193,7 @@ My noble upbringing and demeanour makes it hard for me to connect with people, a
   \item Wand of Web (7)
   \item Stiletto Dagger
   \item Ring of Fire Resistance (loaned)
+  \item Circlet of Telepathy
 \end{itemize}
 }
 
@@ -218,7 +220,9 @@ My noble upbringing and demeanour makes it hard for me to connect with people, a
 \SecondLevelSpellSlotsTotal{3}
 \SecondLevelSpellSlotA{Misty Step (V)}
 \SecondLevelSpellSlotB{Scorching Ray (V, S)}
-\SecondLevelSpellSlotC{Web (V, S, M (Wand of Web)}
+\SecondLevelSpellSlotC{Web (Wand of Web)}
+\SecondLevelSpellSlotD{Detect Thoughts (Circlet of Telepathy)}
+\SecondLevelSpellSlotE{Suggestion (Circlet of Telepathy)}
 
 \ThirdLevelSpellSlotsTotal{3}
 \ThirdLevelSpellSlotA{Lighting Bolt (V, S, M)}
@@ -235,6 +239,10 @@ My noble upbringing and demeanour makes it hard for me to connect with people, a
 \SixthLevelSpellSlotsTotal{1}
 \SixthLevelSpellSlotA{Investiture of Ice (V, S)}
 \SixthLevelSpellSlotB{Chain Lightning (V, S, M)}
+
+\SeventhLevelSpellSlotsTotal{1}
+\SeventhLevelSpellSlotA{Teleport (V)}
+\SeventhLevelSpellSlotB{Crown of Ice (V, S)}
 
 \SeventhLevelSpellSlotsTotal{1}
 
@@ -328,6 +336,11 @@ Additionally, parts of your skin are covered by a thin sheen on dragon-like scal
 \subsubsection*{Elemental Affinity}
 Starting at 6th level, when you cast a spell that deals damage, of the type associated with your draconic ancestor, you can add your Charisma modifier to one damage roll of that spell. At the same time you can spend 1 sorcery point to gain resistance to that damage type for 1 hour.
 
+\subsubsection*{Dragon Wings}
+At 14th level, you gain the ability to sprout a pair of dragon wings from your back, gaining a flying speed equal to your current speed. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action on your turn.
+
+You can't manifest your wings while wearing armour unless the armour is made to accommodate them, and clothing not made to accommodate your wings may be destroyed when you manigest them.
+
 \section*{Background}
 \subsection*{Noble}
 You understand wealth, power, and privilege. You carry a noble title, and your family owns land, collects taxes, and wields significant political influence.
@@ -383,6 +396,13 @@ The wand regains 1d6 + 1 expended Charges daily at dawn. If you expend the wand'
 \textit{Ring (requires attunement)}
 
 You have resistance to fire damage while wearing this ring.
+
+\subsection*{Circlet of Telepathy}
+\textit{Wondrous item, uncommon (requires attunement)}
+
+While wearing this helm, you can use an action to cast the Detect Thoughts spell (save DC 13) from it. As long as you maintain Concentration on the spell, you can use a Bonus Action to send a Telepathic Message to a creature you are focused on. It can reply using a Bonus Action to do so while your focus on it continues.
+
+While focusing on a creature with Detect Thoughts, you can use an action to cast the Suggestion spell (save DC 13) from The Helm on that creature. Once used, the Suggestion property can't be used again until the next dawn.
 
 \section*{Spells}
  
@@ -554,6 +574,24 @@ You create three glowing darts of magical force. Each dart hits a creature of yo
 \subsection*{Level 2}
 
 \DndSpellHeader
+  {Detect Thoughts (Circlet of Telepathy)}
+  {2nd-level divination}
+  {1 action}
+  {Self}
+  {V, S, M (A copper piece)}
+  {Concentration, up to 1 minute}
+  
+For the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. If the creature you choose has an Intelligence of 3 or lower or doesn’t speak any language, the creature is unaffected.
+
+You initially learn the surface thoughts of the creature—what is most on its mind in that moment. As an action, you can either shift your attention to another creature’s thoughts or attempt to probe deeper into the same creature’s mind. If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature’s thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the spell ends.
+
+Questions verbally directed at the target creature naturally shape the course of its thoughts, so this spell is particularly effective as part of an interrogation.
+
+You can also use this spell to detect the presence of thinking creatures you can’t see. When you cast the spell or as your action during the duration, you can search for thoughts within 30 feet of you. The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. You can’t detect a creature with an Intelligence of 3 or lower or one that doesn’t speak any language.
+
+Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can’t see it, but it must still be within range.
+
+\DndSpellHeader
   {Misty Step}
   {2nd-level conjuration}
   {1 bonus action}
@@ -580,6 +618,40 @@ You create three rays of fire and hurl them at targets within range. You can hur
   \item Quickened Spell
   \item Spell Sniper
 \end{itemize}
+
+\DndSpellHeader
+  {Suggestion (Circlet of Telepathy)}
+  {2nd-level evocation}
+  {1 action}
+  {30 feet}
+  {V, M (A snake's tongue and either a bit of honeycomb or a drop of sweet oil)}
+  {Concentration, up to 8 hours}
+
+You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can’t be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.
+
+The target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.
+
+You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn’t met before the spell expires, the activity isn’t performed.
+
+If you or any of your companions damage the target, the spell ends.
+
+\DndSpellHeader
+  {Web}
+  {2nd-level conjuration}
+  {1 action}
+  {60 feet}
+  {V, S, M (A bit of spiderweb)}
+  {Instantaneous}
+
+You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area.
+
+If the webs aren’t anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the conjured web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet.
+
+Each creature that starts its turn in the webs or that enters them during its turn must make a Dexterity saving throw. On a failed save, the creature is restrained as long as it remains in the webs or until it breaks free.
+
+A creature restrained by the webs can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer restrained.
+
+The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire.
 
 \subsection*{Level 3}
 
@@ -749,7 +821,7 @@ Until the spell ends, ice rimes your body, and you gain the following benefits:
   {6th-level evocation}
   {1 action}
   {150 feet}
-  {V, S, M (a bit of fur; a piece of amber, glass or a crystal rod; and three silver pins}
+  {V, S, M (a bit of fur; a piece of amber, glass or a crystal rod; and three silver pins)}
   {Instantaneous}
 
 You create a bolt of lightning that arcs towards a target of your choice that you can see within range. Three bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A target can be a creature or object and can be targeted by only one of the bolts.
@@ -763,5 +835,66 @@ A target must make a Dexterity saving throw. The target takes 10d6 lightning dam
   \item Heightened Spell
   \item Quickened Spell
 \end{itemize}
+
+\subsection*{Level 7}
+
+\DndSpellHeader
+  {Teleport}
+  {7th-level conjuration}
+  {1 action}
+  {10 feet}
+  {V}
+  {Instantaneous}
+
+This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can’t be held or carried by an unwilling creature.
+
+The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The GM rolls d100 and consults the table.
+
+Familiarity Mishap Similar Area Off Target On Target
+
+\begin{DndTable}[]{lccc}
+Familiarity        &     Mishap     &  Similar Area  &   Off Target   &    On Target    \\
+Permanent circle   &       --       &       --       &       --       &    01 -- 100    \\
+Associated object  &       --       &       --       &       --       &    01 -- 100    \\
+Very familiar      &    01 -- 05    &    06 -- 13    &    14 -- 24    &    25 -- 100    \\
+Seen casually      &    01 -- 33    &    34 -- 43    &    44 -- 53    &    54 -- 100    \\
+Viewed once        &    01 -- 43    &    44 -- 53    &    54 -- 73    &    74 -- 100    \\
+Description        &    01 -- 43    &    44 -- 53    &    54 -- 73    &    74 -- 100    \\
+False destination  &    01 -- 50    &    51 -- 100   &       --       &       --
+\end{DndTable}
+
+\subparagraph*Familiarity} “Permanent circle” means a permanent teleportation circle whose sigil sequence you know. “Associated object” means that you possess an object taken from the desired destination within the last six months, such as a book from a wizard’s library, bed linen from a royal suite, or a chunk of marble from a lich’s secret tomb.
+
+“Very familiar” is a place you have been very often, a place you have carefully studied, or a place you can see when you cast the spell. “Seen casually” is someplace you have seen more than once but with which you aren’t very familiar. “Viewed once” is a place you have seen once, possibly using magic. “Description” is a place whose location and appearance you know through someone else’s description, perhaps from a map.
+
+"False destination” is a place that doesn’t exist. Perhaps you tried to scry an enemy’s sanctum but instead viewed an illusion, or you are attempting to teleport to a familiar location that no longer exists.
+
+On Target. You and your group (or the target object) appear where you want to.
+
+Off Target. You and your group (or the target object) appear a random distance away from the destination in a random direction. Distance off target is 1d10 × 1d10 percent of the distance that was to be traveled. For example, if you tried to travel 120 miles, landed off target, and rolled a 5 and 3 on the two d10s, then you would be off target by 15 percent, or 18 miles. The GM determines the direction off target randomly by rolling a d8 and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass. If you were teleporting to a coastal city and wound up 18 miles out at sea, you could be in trouble.
+
+Similar Area. You and your group (or the target object) wind up in a different area that’s visually or thematically similar to the target area. If you are heading for your home laboratory, for example, you might wind up in another wizard’s laboratory or in an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, you appear in the closest similar place, but since the spell has no range limit, you could conceivably wind up anywhere on the plane.
+
+Mishap. The spell’s unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 force damage, and the GM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time).
+
+\subparagraph*{Abilities}
+\begin{itemize}
+  \item Quickened Spell
+\end{itemize}
+
+\subsection*{Level 7}
+\DndSpellHeader
+  {Crown of Ice}
+  {7th-level evocation}
+  {1 action}
+  {Self}
+  {V, S}
+  {1 hour}
+
+Seven icy shards appear and orbit your head until the spell ends. You can use a bonus action to send one of these motes streaking toward one creature or object within 120 feet of you. When you do so, make a ranged spell attack. On a hit, the target takes 4d12 ice damage. Whether you hit or miss, the icicle is expended. The spell ends early if you expend the last icicle.
+
+If you have four or more motes remaining, they shed icy blue light in a 30-foot radius and dim light for an additional 30 feet. If you have one to three motes remaining, they shed dim light in a 30-foot radius.
+
+\subparagraph*{At Higher Levels} When you cast this spell using a spell slot of 8th level or higher, the number of icicles created increases by 2 for each spell slot above 7th.
 
 \end{document}
